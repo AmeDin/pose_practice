@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Boxes from './components/Tween/Boxes';
+import Springs from './components/Spring/Springs';
+import Decays from './components/Decay/Decays';
+import Keyframes from './components/Keyframe/Keyframes';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Boxes />
+        <Springs />
+        <Decays />
+        <Keyframes />
       </div>
     );
   }
